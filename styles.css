@@ -1,5 +1,99 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.3;
+  color: white;
+  background-color: rebeccapurple;
+}
+
+/* Navbar Styles */
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.navbar ul li a:hover {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-color: grey;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Two Column Layout */
+.column-section {
+  background-color: grey;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.column {
+  margin-top: 20px;
+}
+
+.column h2 {
+  font-size: 20px;
+}
+
+.column p {
+  font-size: 1.2rem;
+}
+
+.column ul {
+  list-style-type: none;
+}
+
+.column ul li {
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  color: grey;
+}
+
+/* Responsive Web Design */
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column{
+    flex-basis: 80%;
+  }
 }
